@@ -1,0 +1,16 @@
+C:\Users\nickb\Programming\Projects_C\Jump Study C\Projects\StudentManagement\StudentManagement\bin\Debug\net5.0\StudentManagement.exe
+C:\Users\nickb\Programming\Projects_C\Jump Study C\Projects\StudentManagement\StudentManagement\bin\Debug\net5.0\StudentManagement.deps.json
+C:\Users\nickb\Programming\Projects_C\Jump Study C\Projects\StudentManagement\StudentManagement\bin\Debug\net5.0\StudentManagement.runtimeconfig.json
+C:\Users\nickb\Programming\Projects_C\Jump Study C\Projects\StudentManagement\StudentManagement\bin\Debug\net5.0\StudentManagement.runtimeconfig.dev.json
+C:\Users\nickb\Programming\Projects_C\Jump Study C\Projects\StudentManagement\StudentManagement\bin\Debug\net5.0\StudentManagement.dll
+C:\Users\nickb\Programming\Projects_C\Jump Study C\Projects\StudentManagement\StudentManagement\bin\Debug\net5.0\StudentManagement.pdb
+C:\Users\nickb\Programming\Projects_C\Jump Study C\Projects\StudentManagement\StudentManagement\obj\Debug\net5.0\StudentManagement.csproj.AssemblyReference.cache
+C:\Users\nickb\Programming\Projects_C\Jump Study C\Projects\StudentManagement\StudentManagement\obj\Debug\net5.0\StudentManagement.GeneratedMSBuildEditorConfig.editorconfig
+C:\Users\nickb\Programming\Projects_C\Jump Study C\Projects\StudentManagement\StudentManagement\obj\Debug\net5.0\StudentManagement.AssemblyInfoInputs.cache
+C:\Users\nickb\Programming\Projects_C\Jump Study C\Projects\StudentManagement\StudentManagement\obj\Debug\net5.0\StudentManagement.AssemblyInfo.cs
+C:\Users\nickb\Programming\Projects_C\Jump Study C\Projects\StudentManagement\StudentManagement\obj\Debug\net5.0\StudentManagement.csproj.CoreCompileInputs.cache
+C:\Users\nickb\Programming\Projects_C\Jump Study C\Projects\StudentManagement\StudentManagement\obj\Debug\net5.0\StudentManagement.dll
+C:\Users\nickb\Programming\Projects_C\Jump Study C\Projects\StudentManagement\StudentManagement\obj\Debug\net5.0\refint\StudentManagement.dll
+C:\Users\nickb\Programming\Projects_C\Jump Study C\Projects\StudentManagement\StudentManagement\obj\Debug\net5.0\StudentManagement.pdb
+C:\Users\nickb\Programming\Projects_C\Jump Study C\Projects\StudentManagement\StudentManagement\obj\Debug\net5.0\StudentManagement.genruntimeconfig.cache
+C:\Users\nickb\Programming\Projects_C\Jump Study C\Projects\StudentManagement\StudentManagement\obj\Debug\net5.0\ref\StudentManagement.dll
