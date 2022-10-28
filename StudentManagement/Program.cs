@@ -112,6 +112,7 @@ namespace StudentManagement
 
             exitStatus = false;
 
+            //Combines input for singular name attribute in Student object
             name = String.Concat(fName, " ", mName, lName);
 
             while (!exitStatus)
@@ -177,6 +178,7 @@ namespace StudentManagement
 
         }
 
+        //List all students in system, along with their courses and associated grades.
         public static void ListStudents()
         {
             if (students.Count != 0)
@@ -203,6 +205,7 @@ namespace StudentManagement
             }
         }
 
+        //Finds specify student by id, lists all info along with courses/grades.
         public static void FindStudent()
         {
 
@@ -245,6 +248,10 @@ namespace StudentManagement
 
         }
 
+        //Based off RegisterStudent() and FindStudent(), Student is slected by Id value.
+        //Before each attribute is collected User is asked if they would like to edit that attribute
+        //If User chooses not to, previous value is assigned to new Student object.
+        //Once editing is done the new Student object replaces the previous in the static Student list
         public static void EditStudent()
         {
             string confirm;
@@ -450,6 +457,9 @@ namespace StudentManagement
 
         }
 
+        //Adds course to a List<Course>, when course is added to list a grade attribute is attached as well.
+        //List gets returned to be added to Student object
+        //Student count attribute is increased for everytime course is added to a list
         public static List<Course> addStudentToCourses()
         {
 
@@ -577,6 +587,7 @@ namespace StudentManagement
 
         }
 
+        //Returns student count for chosen course
         public static void CourseTotal()
         {
 
@@ -622,6 +633,7 @@ namespace StudentManagement
             }
         }
 
+        //Student class - Anytime a Student option is initialized the static ID int is incremented by 1
         internal class Student
         {
 
@@ -672,6 +684,7 @@ namespace StudentManagement
             }
         }
 
+        //Course class
         internal class Course
         {
             public string name;
