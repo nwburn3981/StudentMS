@@ -1,5 +1,6 @@
 ﻿using System;
 using System.Collections.Generic;
+using System.Diagnostics;
 using System.Runtime.CompilerServices;
 
 namespace StudentManagement
@@ -7,9 +8,9 @@ namespace StudentManagement
     internal class Program
     {
 
-        static int ID = 0;
-        static List<Course> courses = new List<Course>();
-        static List<Student> students = new List<Student>();
+        static int ID = 0; //Used to iterate student ids automatically when new student is initialized
+        static List<Course> courses = new List<Course>(); //Preset courses
+        static List<Student> students = new List<Student>(); //Keep track of total number of students
 
 
         static void Main(string[] args)
@@ -20,15 +21,8 @@ namespace StudentManagement
             courses.Add(new Course("Science 101"));
             courses.Add(new Course("Yoga 101"));
 
+            //Used throughout app to keep user in menus until finished
             bool exitStatus = false;
-
-            /*
-             -1. List students
-             -2. Register student
-             -3. Find student by id
-             -4. Edit student
-             -5. Course student total
-             */
 
             Console.WriteLine("<------------Student Management-------------->");
             while (!exitStatus)
@@ -36,7 +30,7 @@ namespace StudentManagement
                 Console.WriteLine("Please select a menu option!!!!");
                 Console.WriteLine("\n1. Register Student" + "\n2. List Students" + "\n3. Find Student by id" + "\n4. Edit Student info" + "\n5. Course Student total" + "\n6. Exit");
 
-                int input = Console.Read();
+                int input = int.Parse(Console.ReadLine());
 
                 switch (input)
                 {
@@ -61,12 +55,13 @@ namespace StudentManagement
                 }
             }
         }
-
+        
+        //Runs through creating a new Student object step by step, some validation on input where necessary
         public static void RegisterStudent()
         {
 
             bool exitStatus = false;
-            string name, fName = "", mName, lName = "", grade;
+            string name, fName = "", mName, lName = "";
             DateTime dob;
             int year = 0, month = 0, day = 0;
             List<Course> courses = new List<Course>();
@@ -93,6 +88,7 @@ namespace StudentManagement
 
             mName = Console.ReadLine();
 
+            //Formats name if no middle name is specified
             if (!mName.Equals(""))
             {
                 mName = mName + " ";
@@ -122,7 +118,7 @@ namespace StudentManagement
             {
                 Console.WriteLine("Please enter Student's birth year: ");
 
-                year = Console.Read();
+                year = int.Parse(Console.ReadLine());
 
                 if (year > 2004 || year < 1932)
                 {
@@ -140,7 +136,7 @@ namespace StudentManagement
             {
                 Console.WriteLine("Please enter Student's birth month: ");
 
-                month = Console.Read();
+                month = int.Parse(Console.ReadLine());
 
                 if (month > 12 || month < 1)
                 {
@@ -158,7 +154,7 @@ namespace StudentManagement
             {
                 Console.WriteLine("Please enter Student's birth day: ");
 
-                day = Console.Read();
+                day = int.Parse(Console.ReadLine());
 
                 if (day > 31 || year < 1)
                 {
@@ -183,26 +179,276 @@ namespace StudentManagement
 
         public static void ListStudents()
         {
-
-            foreach (Student student in students)
+            if (students.Count != 0)
             {
-                Console.WriteLine("Student ID: " + student.id);
-                Console.WriteLine("Student Name: " + student.name);
-                Console.WriteLine("Student Courses: ");
+                foreach (Student student in students)
+                {
+                    Console.WriteLine("Student ID: " + student.id);
+                    Console.WriteLine("Student Name: " + student.name);
+                    Console.WriteLine("Student Courses: ");
 
-                foreach (Course course in student.studentCourses) {
-                    Console.WriteLine("\t" + course.name + ", Grade: " + course.grade);
+                    foreach (Course course in student.studentCourses)
+                    {
+                        Console.WriteLine("\t" + course.name + ", Grade: " + course.grade);
+                    }
+
+                }
+
+                Console.WriteLine("Press any key to continue.....");
+                Console.ReadKey();
+            }
+
+            else {
+                Console.WriteLine("No students found in system.");
+            }
+        }
+
+        public static void FindStudent()
+        {
+
+            Student chosenStudent = new Student();
+
+            int id;
+            bool found = false;
+
+            Console.WriteLine("Please enter id of Student:");
+
+            id = int.Parse(Console.ReadLine());
+
+            foreach (var student in students)
+            {
+
+                if (id == student.id)
+                {
+                    found = true;
+                    Console.WriteLine("Student ID: " + student.id);
+                    Console.WriteLine("Student Name: " + student.name);
+                    Console.WriteLine("Student Courses: ");
+
+                    foreach (Course course in student.studentCourses)
+                    {
+                        Console.WriteLine("\t" + course.name + ", Grade: " + course.grade);
+                    }
+
+                    Console.WriteLine("Press any key to continue.....");
+                    Console.ReadKey();
+                    break;
+
                 }
 
             }
 
-            Console.WriteLine("Press any key to continue.....");
-            Console.ReadKey();
+            if (found == false)
+            {
+                Console.WriteLine("No matching student found. Returning to Main Menu......");
+            }
+
         }
 
-        public static void FindStudent() { }
+        public static void EditStudent()
+        {
+            string confirm;
+            int id, studentIndex = 0;
+            bool found = false;
 
-        public static void EditStudent() { }
+            Console.WriteLine("Please enter id of Student:");
+
+            id = int.Parse(Console.ReadLine());
+
+            foreach (var student in students)
+            {
+
+                if (id == student.id)
+                {
+                    found = true;
+                    Console.WriteLine("Student ID: " + student.id);
+                    Console.WriteLine("Student Name: " + student.name);
+                    Console.WriteLine("Student Courses: ");
+
+                    foreach (Course course in student.studentCourses)
+                    {
+                        Console.WriteLine("\t" + course.name + ", Grade: " + course.grade);
+                    }
+
+                    studentIndex = students.IndexOf(student);
+
+                    Console.WriteLine("Press any key to continue.....");
+                    Console.ReadKey();
+                    break;
+
+                }
+
+            }
+
+            if (found == true)
+            {
+
+                bool exitStatus = false;
+                string name, fName = "", mName, lName = "", grade;
+                DateTime dob;
+                int year = 0, month = 0, day = 0;
+                List<Course> courses = new List<Course>();
+
+
+                Console.WriteLine("Edit Student's name? [Y/N]");
+                confirm = Console.ReadLine();
+
+
+
+                if (confirm.StartsWith("y") || confirm.StartsWith("Y"))
+                {
+                    while (!exitStatus)
+                    {
+
+                        Console.WriteLine("Please enter Student's first name: ");
+
+                        fName = Console.ReadLine();
+
+                        if (fName.Equals(""))
+                        {
+                            Console.WriteLine("First name can not be blank.");
+                        }
+                        else
+                        {
+                            exitStatus = true;
+                        }
+
+                    }
+
+                    exitStatus = false;
+
+                    Console.WriteLine("Please enter Student middle name (press enter if no middle name): ");
+
+                    mName = Console.ReadLine();
+
+                    if (!mName.Equals(""))
+                    {
+                        mName = mName + " ";
+                    }
+
+                    while (!exitStatus)
+                    {
+                        Console.WriteLine("Please enter Student's last name: ");
+
+                        lName = Console.ReadLine();
+
+                        if (lName.Equals(""))
+                        {
+                            Console.WriteLine("Last name can not be blank.");
+                        }
+                        else
+                        {
+                            exitStatus = true;
+                        }
+                    }
+
+                    exitStatus = false;
+
+                    name = String.Concat(fName, " ", mName, lName);
+
+                }
+
+                else
+                {
+                    name = students[studentIndex].name;
+                }
+
+                Console.WriteLine("Edit Student's date of birth? [Y/N]");
+                confirm = Console.ReadLine();
+
+
+
+                if (confirm.StartsWith("y") || confirm.StartsWith("Y"))
+                {
+                    while (!exitStatus)
+                    {
+                        Console.WriteLine("Please enter Student's birth year: ");
+
+                        year = int.Parse(Console.ReadLine());
+
+                        if (year > 2004 || year < 1932)
+                        {
+                            Console.WriteLine("Student must between 18 and 90.");
+                        }
+                        else
+                        {
+                            exitStatus = true;
+                        }
+                    }
+
+                    exitStatus = false;
+
+                    while (!exitStatus)
+                    {
+                        Console.WriteLine("Please enter Student's birth month: ");
+
+                        month = int.Parse(Console.ReadLine());
+
+                        if (month > 12 || month < 1)
+                        {
+                            Console.WriteLine("Invalid month");
+                        }
+                        else
+                        {
+                            exitStatus = true;
+                        }
+                    }
+
+                    exitStatus = false;
+
+                    while (!exitStatus)
+                    {
+                        Console.WriteLine("Please enter Student's birth day: ");
+
+                        day = int.Parse(Console.ReadLine());
+
+                        if (day > 31 || year < 1)
+                        {
+                            Console.WriteLine("Invalid day.");
+                        }
+                        else
+                        {
+                            exitStatus = true;
+                        }
+                    }
+
+                    exitStatus = false;
+
+                    dob = new DateTime(year, month, day);
+
+                }
+                else
+                {
+                    dob = students[studentIndex].dob;
+                }
+
+                Console.WriteLine("Edit Student's courses? [Y/N]");
+                confirm = Console.ReadLine();
+
+
+
+                if (confirm.StartsWith("y") || confirm.StartsWith("Y"))
+                {
+                    courses = addStudentToCourses();
+                }
+                else
+                {
+                    courses = students[studentIndex].studentCourses;
+                }
+
+
+                students[studentIndex] = new Student(name, dob, courses);
+
+
+            }
+
+            else if (found == false)
+            {
+                Console.WriteLine("No matching student found. Returning to Main Menu......");
+            }
+
+
+        }
 
         public static List<Course> addStudentToCourses()
         {
@@ -221,10 +467,10 @@ namespace StudentManagement
 
                 for (int i = 0; i < courseList.Count; i++)
                 {
-                    Console.WriteLine(i + "." + " " + courseList[i]);
+                    Console.WriteLine((i + 1) + "." + " " + courseList[i].name);
                 }
 
-                int input = Console.Read();
+                int input = int.Parse(Console.ReadLine());
 
                 switch (input)
                 {
@@ -233,7 +479,7 @@ namespace StudentManagement
                         {
                             Console.WriteLine("Please enter number grade for course.");
 
-                            grade = Console.Read();
+                            grade = int.Parse(Console.ReadLine());
 
                             if (grade > 100 || grade < 0)
                             {
@@ -253,7 +499,7 @@ namespace StudentManagement
                         {
                             Console.WriteLine("Please enter number grade for course.");
 
-                            grade = Console.Read();
+                            grade = int.Parse(Console.ReadLine());
 
                             if (grade > 100 || grade < 0)
                             {
@@ -274,7 +520,7 @@ namespace StudentManagement
                         {
                             Console.WriteLine("Please enter number grade for course.");
 
-                            grade = Console.Read();
+                            grade = int.Parse(Console.ReadLine());
 
                             if (grade > 100 || grade < 0)
                             {
@@ -295,7 +541,7 @@ namespace StudentManagement
                         {
                             Console.WriteLine("Please enter number grade for course.");
 
-                            grade = Console.Read();
+                            grade = int.Parse(Console.ReadLine());
 
                             if (grade > 100 || grade < 0)
                             {
@@ -331,29 +577,74 @@ namespace StudentManagement
 
         }
 
-        public static void CourseTotal() { }
+        public static void CourseTotal()
+        {
+
+            bool exitStatus = false;
+
+            while (!exitStatus)
+            {
+
+                Console.WriteLine("Please choose course: ");
+
+                for (int i = 0; i < courses.Count; i++)
+                {
+                    Console.WriteLine((i + 1) + "." + " " + courses[i].name);
+                }
+
+                int input = int.Parse(Console.ReadLine());
+
+                switch (input)
+                {
+                    case 1:
+                        Console.WriteLine("Students in {0}: {1}", courses[0].name, courses[0].studentTotal);
+                        break;
+                    case 2:
+                        Console.WriteLine("Students in {0}: {1}", courses[1].name, courses[1].studentTotal);
+                        break;
+                    case 3:
+                        Console.WriteLine("Students in {0}: {1}", courses[2].name, courses[2].studentTotal);
+                        break;
+                    case 4:
+                        Console.WriteLine("Students in {0}: {1}", courses[3].name, courses[3].studentTotal);
+                        break;
+                }
+
+                Console.WriteLine("Check another course? [Y/N]");
+
+                string confirm = Console.ReadLine();
+
+                if (confirm.StartsWith("N") || confirm.StartsWith("n"))
+                {
+                    exitStatus = true;
+                }
+
+            }
+        }
 
         internal class Student
         {
-            public int id
+
+            public int id;
+            public int Id
             {
                 get { return id; }
                 set { id = value; }
             }
 
-            public string name
+            public string name;
+            public string Name
             {
                 get { return name; }
                 set { name = value; }
             }
 
-            public DateTime dob
+            public DateTime dob;
+            public DateTime DoB
             {
                 get { return dob; }
                 set { dob = value; }
             }
-
-
 
             public List<Course> studentCourses;
 
@@ -383,14 +674,14 @@ namespace StudentManagement
 
         internal class Course
         {
-
-            public string name
+            public string name;
+            public string Name
             {
                 get { return name; }
                 set { name = value; }
             }
-
-            public int grade
+            public int grade;
+            public int Grade
             {
                 get { return grade; }
                 set { grade = value; }
