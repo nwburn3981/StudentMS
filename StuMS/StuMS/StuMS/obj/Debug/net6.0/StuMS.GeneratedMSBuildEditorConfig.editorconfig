@@ -5,6 +5,7 @@ build_property.UsingMicrosoftNETSdkWeb = true
 build_property.ProjectTypeGuids = 
 build_property.InvariantGlobalization = 
 build_property.PlatformNeutralAssembly = 
+build_property.EnforceExtendedAnalyzerRules = 
 build_property._SupportedPlatformList = Linux,macOS,Windows
 build_property.RootNamespace = StuMS
 build_property.RootNamespace = StuMS
@@ -15,32 +16,32 @@ build_property.GenerateRazorMetadataSourceChecksumAttributes =
 build_property.MSBuildProjectDirectory = C:\Users\nickb\Programming\Projects_C\Jump Study C\Projects\StudentManagement\StuMS\StuMS\StuMS
 build_property._RazorSourceGeneratorDebug = 
 
-[C:/Users/nickb/Programming/Projects_C/Jump Study C/Projects/StudentManagement/StuMS/StuMS/StuMS/Areas/Student/Views/Students/Create.cshtml]
-build_metadata.AdditionalFiles.TargetPath = QXJlYXNcU3R1ZGVudFxWaWV3c1xTdHVkZW50c1xDcmVhdGUuY3NodG1s
+[C:/Users/nickb/Programming/Projects_C/Jump Study C/Projects/StudentManagement/StuMS/StuMS/StuMS/Areas/Student/Views/Home/Index.cshtml]
+build_metadata.AdditionalFiles.TargetPath = QXJlYXNcU3R1ZGVudFxWaWV3c1xIb21lXEluZGV4LmNzaHRtbA==
 build_metadata.AdditionalFiles.CssScope = 
 
-[C:/Users/nickb/Programming/Projects_C/Jump Study C/Projects/StudentManagement/StuMS/StuMS/StuMS/Areas/Student/Views/Students/Delete.cshtml]
-build_metadata.AdditionalFiles.TargetPath = QXJlYXNcU3R1ZGVudFxWaWV3c1xTdHVkZW50c1xEZWxldGUuY3NodG1s
+[C:/Users/nickb/Programming/Projects_C/Jump Study C/Projects/StudentManagement/StuMS/StuMS/StuMS/Areas/Student/Views/Home/Privacy.cshtml]
+build_metadata.AdditionalFiles.TargetPath = QXJlYXNcU3R1ZGVudFxWaWV3c1xIb21lXFByaXZhY3kuY3NodG1s
 build_metadata.AdditionalFiles.CssScope = 
 
-[C:/Users/nickb/Programming/Projects_C/Jump Study C/Projects/StudentManagement/StuMS/StuMS/StuMS/Areas/Student/Views/Students/Details.cshtml]
-build_metadata.AdditionalFiles.TargetPath = QXJlYXNcU3R1ZGVudFxWaWV3c1xTdHVkZW50c1xEZXRhaWxzLmNzaHRtbA==
+[C:/Users/nickb/Programming/Projects_C/Jump Study C/Projects/StudentManagement/StuMS/StuMS/StuMS/Areas/Student/Views/Student/Index.cshtml]
+build_metadata.AdditionalFiles.TargetPath = QXJlYXNcU3R1ZGVudFxWaWV3c1xTdHVkZW50XEluZGV4LmNzaHRtbA==
 build_metadata.AdditionalFiles.CssScope = 
 
-[C:/Users/nickb/Programming/Projects_C/Jump Study C/Projects/StudentManagement/StuMS/StuMS/StuMS/Areas/Student/Views/Students/Edit.cshtml]
-build_metadata.AdditionalFiles.TargetPath = QXJlYXNcU3R1ZGVudFxWaWV3c1xTdHVkZW50c1xFZGl0LmNzaHRtbA==
+[C:/Users/nickb/Programming/Projects_C/Jump Study C/Projects/StudentManagement/StuMS/StuMS/StuMS/Areas/Student/Views/_ViewImports.cshtml]
+build_metadata.AdditionalFiles.TargetPath = QXJlYXNcU3R1ZGVudFxWaWV3c1xfVmlld0ltcG9ydHMuY3NodG1s
 build_metadata.AdditionalFiles.CssScope = 
 
-[C:/Users/nickb/Programming/Projects_C/Jump Study C/Projects/StudentManagement/StuMS/StuMS/StuMS/Areas/Student/Views/Students/Index.cshtml]
-build_metadata.AdditionalFiles.TargetPath = QXJlYXNcU3R1ZGVudFxWaWV3c1xTdHVkZW50c1xJbmRleC5jc2h0bWw=
+[C:/Users/nickb/Programming/Projects_C/Jump Study C/Projects/StudentManagement/StuMS/StuMS/StuMS/Areas/Student/Views/_ViewStart.cshtml]
+build_metadata.AdditionalFiles.TargetPath = QXJlYXNcU3R1ZGVudFxWaWV3c1xfVmlld1N0YXJ0LmNzaHRtbA==
 build_metadata.AdditionalFiles.CssScope = 
 
-[C:/Users/nickb/Programming/Projects_C/Jump Study C/Projects/StudentManagement/StuMS/StuMS/StuMS/Views/Home/Index.cshtml]
-build_metadata.AdditionalFiles.TargetPath = Vmlld3NcSG9tZVxJbmRleC5jc2h0bWw=
+[C:/Users/nickb/Programming/Projects_C/Jump Study C/Projects/StudentManagement/StuMS/StuMS/StuMS/Areas/Teacher/Views/_ViewImports.cshtml]
+build_metadata.AdditionalFiles.TargetPath = QXJlYXNcVGVhY2hlclxWaWV3c1xfVmlld0ltcG9ydHMuY3NodG1s
 build_metadata.AdditionalFiles.CssScope = 
 
-[C:/Users/nickb/Programming/Projects_C/Jump Study C/Projects/StudentManagement/StuMS/StuMS/StuMS/Views/Home/Privacy.cshtml]
-build_metadata.AdditionalFiles.TargetPath = Vmlld3NcSG9tZVxQcml2YWN5LmNzaHRtbA==
+[C:/Users/nickb/Programming/Projects_C/Jump Study C/Projects/StudentManagement/StuMS/StuMS/StuMS/Areas/Teacher/Views/_ViewStart.cshtml]
+build_metadata.AdditionalFiles.TargetPath = QXJlYXNcVGVhY2hlclxWaWV3c1xfVmlld1N0YXJ0LmNzaHRtbA==
 build_metadata.AdditionalFiles.CssScope = 
 
 [C:/Users/nickb/Programming/Projects_C/Jump Study C/Projects/StudentManagement/StuMS/StuMS/StuMS/Views/Shared/Error.cshtml]

@@ -10,6 +10,6 @@ namespace StuMS.Models
         [Display(Name="Course Name")]
         public string Name { get; set;}
         public List<Grade> Grades { get; set; }
-        public List<Teacher> Teachers { get; set; }
+        public Teacher Teacher { get; set; }
     }
 }

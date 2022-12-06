@@ -2,7 +2,7 @@
 using StuMS.Models;
 using System.Diagnostics;
 
-namespace StuMS.Controllers
+namespace StuMS.Areas.Student.Controllers
 {
     public class HomeController : Controller
     {

@@ -1,6 +1,6 @@
 {
   "Version": 1,
-  "Hash": "CtvIMji/owYM1gYj1vomEDJ1/kSCtfjaQoOMh6x7gbo=",
+  "Hash": "zhhBtQ59ZZSojf4aa/+7GyC4O9XnUSyXnUNuK4mIBsg=",
   "Source": "StuMS",
   "BasePath": "_content/StuMS",
   "Mode": "Default",
@@ -100,6 +100,23 @@
       "CopyToOutputDirectory": "Never",
       "CopyToPublishDirectory": "PreserveNewest",
       "OriginalItemSpec": "wwwroot\\js\\site.js"
+    },
+    {
+      "Identity": "C:\\Users\\nickb\\Programming\\Projects_C\\Jump Study C\\Projects\\StudentManagement\\StuMS\\StuMS\\StuMS\\wwwroot\\js\\student.js",
+      "SourceId": "StuMS",
+      "SourceType": "Discovered",
+      "ContentRoot": "C:\\Users\\nickb\\Programming\\Projects_C\\Jump Study C\\Projects\\StudentManagement\\StuMS\\StuMS\\StuMS\\wwwroot\\",
+      "BasePath": "_content/StuMS",
+      "RelativePath": "js/student.js",
+      "AssetKind": "All",
+      "AssetMode": "All",
+      "AssetRole": "Primary",
+      "RelatedAsset": "",
+      "AssetTraitName": "",
+      "AssetTraitValue": "",
+      "CopyToOutputDirectory": "Never",
+      "CopyToPublishDirectory": "PreserveNewest",
+      "OriginalItemSpec": "wwwroot\\js\\student.js"
     },
     {
       "Identity": "C:\\Users\\nickb\\Programming\\Projects_C\\Jump Study C\\Projects\\StudentManagement\\StuMS\\StuMS\\StuMS\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap.css",

@@ -1,0 +1,46 @@
+﻿@model IEnumerable<Student>
+@{
+    ViewData["Title"] = "Index";
+}
+
+@*@if(TempData["success"] != null)
+{
+    <h2>@TempData["success"]</h2>
+}*@
+@*<partial name="_Notification" />*@
+<div class="container p-3">
+    <div class="row pt-4">
+        <div class="col-6">
+            <h2 class="text-primary">Student List</h2>
+        </div>
+        <div class="col-6 text-end">
+            <a asp-controller="Student" asp-action="Create" class="btn btn-primary" hidden>
+                Create New Category
+            </a>
+        </div>
+    </div>
+</div>
+
+<table id="stu-tbl" class="table table-bordered table-striped">
+
+    <thead>
+        <tr>
+            <th>
+                Student Name
+            </th>
+            <th>
+                Date of Birth
+            </th>
+            <th>
+                Email
+            <th />
+            <th />
+        </tr>
+    </thead>
+</table>
+
+@section Scripts{
+    <script src="~/js/student.js"></script>
+}
+
+
