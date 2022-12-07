@@ -53,11 +53,11 @@
               "target": "Package",
               "version": "[7.0.0, )"
             },
-            "Microsoft.EntityFrameworkCore.Sqlite": {
+            "Microsoft.EntityFrameworkCore.Proxies": {
               "target": "Package",
               "version": "[7.0.0, )"
             },
-            "Microsoft.EntityFrameworkCore.Sqlite.Core": {
+            "Microsoft.EntityFrameworkCore.SqlServer": {
               "target": "Package",
               "version": "[7.0.0, )"
             },
