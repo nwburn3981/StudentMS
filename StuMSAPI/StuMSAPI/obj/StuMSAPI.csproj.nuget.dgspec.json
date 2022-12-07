@@ -1,23 +1,23 @@
 {
   "format": 1,
   "restore": {
-    "C:\\Users\\nickb\\Programming\\Projects_C\\Jump Study C\\Projects\\StudentManagement\\StuMSAPI\\StuMSAPI\\StuMSAPI.csproj": {}
+    "C:\\Users\\shemb\\source\\repos\\CSharp_StudentManagement\\StuMSAPI\\StuMSAPI\\StuMSAPI.csproj": {}
   },
   "projects": {
-    "C:\\Users\\nickb\\Programming\\Projects_C\\Jump Study C\\Projects\\StudentManagement\\StuMSAPI\\StuMSAPI\\StuMSAPI.csproj": {
+    "C:\\Users\\shemb\\source\\repos\\CSharp_StudentManagement\\StuMSAPI\\StuMSAPI\\StuMSAPI.csproj": {
       "version": "1.0.0",
       "restore": {
-        "projectUniqueName": "C:\\Users\\nickb\\Programming\\Projects_C\\Jump Study C\\Projects\\StudentManagement\\StuMSAPI\\StuMSAPI\\StuMSAPI.csproj",
+        "projectUniqueName": "C:\\Users\\shemb\\source\\repos\\CSharp_StudentManagement\\StuMSAPI\\StuMSAPI\\StuMSAPI.csproj",
         "projectName": "StuMSAPI",
-        "projectPath": "C:\\Users\\nickb\\Programming\\Projects_C\\Jump Study C\\Projects\\StudentManagement\\StuMSAPI\\StuMSAPI\\StuMSAPI.csproj",
-        "packagesPath": "C:\\Users\\nickb\\.nuget\\packages\\",
-        "outputPath": "C:\\Users\\nickb\\Programming\\Projects_C\\Jump Study C\\Projects\\StudentManagement\\StuMSAPI\\StuMSAPI\\obj\\",
+        "projectPath": "C:\\Users\\shemb\\source\\repos\\CSharp_StudentManagement\\StuMSAPI\\StuMSAPI\\StuMSAPI.csproj",
+        "packagesPath": "C:\\Users\\shemb\\.nuget\\packages\\",
+        "outputPath": "C:\\Users\\shemb\\source\\repos\\CSharp_StudentManagement\\StuMSAPI\\StuMSAPI\\obj\\",
         "projectStyle": "PackageReference",
         "fallbackFolders": [
           "C:\\Program Files (x86)\\Microsoft Visual Studio\\Shared\\NuGetPackages"
         ],
         "configFilePaths": [
-          "C:\\Users\\nickb\\AppData\\Roaming\\NuGet\\NuGet.Config",
+          "C:\\Users\\shemb\\AppData\\Roaming\\NuGet\\NuGet.Config",
           "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.FallbackLocation.config",
           "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.Offline.config"
         ],
@@ -46,6 +46,24 @@
           "targetAlias": "net7.0",
           "dependencies": {
             "Microsoft.AspNetCore.OpenApi": {
+              "target": "Package",
+              "version": "[7.0.0, )"
+            },
+            "Microsoft.EntityFrameworkCore": {
+              "target": "Package",
+              "version": "[7.0.0, )"
+            },
+            "Microsoft.EntityFrameworkCore.Sqlite": {
+              "target": "Package",
+              "version": "[7.0.0, )"
+            },
+            "Microsoft.EntityFrameworkCore.Sqlite.Core": {
+              "target": "Package",
+              "version": "[7.0.0, )"
+            },
+            "Microsoft.EntityFrameworkCore.Tools": {
+              "include": "Runtime, Build, Native, ContentFiles, Analyzers, BuildTransitive",
+              "suppressParent": "All",
               "target": "Package",
               "version": "[7.0.0, )"
             },

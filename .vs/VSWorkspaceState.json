@@ -1,10 +1,7 @@
 {
   "ExpandedNodes": [
-    "",
-    "\\StudentManagement",
-    "\\StudentManagement\\bin",
-    "\\StudentManagement\\obj"
+    ""
   ],
-  "SelectedNode": "\\StudentManagement\\Program.cs",
+  "SelectedNode": "\\StudentManagement.sln",
   "PreviewInSolutionExplorer": false
 }
