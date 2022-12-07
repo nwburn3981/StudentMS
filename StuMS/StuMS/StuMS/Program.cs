@@ -3,6 +3,8 @@ using StuMS.Data;
 using StuMS.Repo;
 using StuMS.Repo.IRepo;
 
+//Heres your Github practice Momo
+
 var builder = WebApplication.CreateBuilder(args);
 
 // Add services to the container.
