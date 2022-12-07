@@ -17,7 +17,7 @@ namespace StudentManagement
         {
             //Initializing course list
             courses.Add(new Course("Math 101"));
-            courses.Add(new Course("English 101"));
+            courses.Add(new Course("English 102"));
             courses.Add(new Course("Science 101"));
             courses.Add(new Course("Yoga 101"));
 
