@@ -1,3 +1,4 @@
+using StuMSAPI;
 using Microsoft.EntityFrameworkCore;
 using StuMSAPI.Repo;
 using StuMSAPI.Repo.IRepo;
