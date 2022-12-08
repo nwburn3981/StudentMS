@@ -1,23 +1,23 @@
 {
   "format": 1,
   "restore": {
-    "C:\\Users\\shemb\\source\\repos\\CSharp_StudentManagement\\StuMSAPI\\StuMSAPI\\StuMSAPI.csproj": {}
+    "C:\\Users\\nickb\\Programming\\Projects_C\\Jump Study C\\Projects\\StudentManagement\\StuMSAPI\\StuMSAPI\\StuMSAPI.csproj": {}
   },
   "projects": {
-    "C:\\Users\\shemb\\source\\repos\\CSharp_StudentManagement\\StuMSAPI\\StuMSAPI\\StuMSAPI.csproj": {
+    "C:\\Users\\nickb\\Programming\\Projects_C\\Jump Study C\\Projects\\StudentManagement\\StuMSAPI\\StuMSAPI\\StuMSAPI.csproj": {
       "version": "1.0.0",
       "restore": {
-        "projectUniqueName": "C:\\Users\\shemb\\source\\repos\\CSharp_StudentManagement\\StuMSAPI\\StuMSAPI\\StuMSAPI.csproj",
+        "projectUniqueName": "C:\\Users\\nickb\\Programming\\Projects_C\\Jump Study C\\Projects\\StudentManagement\\StuMSAPI\\StuMSAPI\\StuMSAPI.csproj",
         "projectName": "StuMSAPI",
-        "projectPath": "C:\\Users\\shemb\\source\\repos\\CSharp_StudentManagement\\StuMSAPI\\StuMSAPI\\StuMSAPI.csproj",
-        "packagesPath": "C:\\Users\\shemb\\.nuget\\packages\\",
-        "outputPath": "C:\\Users\\shemb\\source\\repos\\CSharp_StudentManagement\\StuMSAPI\\StuMSAPI\\obj\\",
+        "projectPath": "C:\\Users\\nickb\\Programming\\Projects_C\\Jump Study C\\Projects\\StudentManagement\\StuMSAPI\\StuMSAPI\\StuMSAPI.csproj",
+        "packagesPath": "C:\\Users\\nickb\\.nuget\\packages\\",
+        "outputPath": "C:\\Users\\nickb\\Programming\\Projects_C\\Jump Study C\\Projects\\StudentManagement\\StuMSAPI\\StuMSAPI\\obj\\",
         "projectStyle": "PackageReference",
         "fallbackFolders": [
           "C:\\Program Files (x86)\\Microsoft Visual Studio\\Shared\\NuGetPackages"
         ],
         "configFilePaths": [
-          "C:\\Users\\shemb\\AppData\\Roaming\\NuGet\\NuGet.Config",
+          "C:\\Users\\nickb\\AppData\\Roaming\\NuGet\\NuGet.Config",
           "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.FallbackLocation.config",
           "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.Offline.config"
         ],
