@@ -10881,23 +10881,23 @@
     ]
   },
   "packageFolders": {
-    "C:\\Users\\shemb\\.nuget\\packages\\": {},
+    "C:\\Users\\nickb\\.nuget\\packages\\": {},
     "C:\\Program Files (x86)\\Microsoft Visual Studio\\Shared\\NuGetPackages": {}
   },
   "project": {
     "version": "1.0.0",
     "restore": {
-      "projectUniqueName": "C:\\Users\\shemb\\source\\repos\\CSharp_StudentManagement\\StuMS\\StuMS\\StuMS\\StuMS.csproj",
+      "projectUniqueName": "C:\\Users\\nickb\\Programming\\Projects_C\\Jump Study C\\Projects\\StudentManagement\\StuMS\\StuMS\\StuMS\\StuMS.csproj",
       "projectName": "StuMS",
-      "projectPath": "C:\\Users\\shemb\\source\\repos\\CSharp_StudentManagement\\StuMS\\StuMS\\StuMS\\StuMS.csproj",
-      "packagesPath": "C:\\Users\\shemb\\.nuget\\packages\\",
-      "outputPath": "C:\\Users\\shemb\\source\\repos\\CSharp_StudentManagement\\StuMS\\StuMS\\StuMS\\obj\\",
+      "projectPath": "C:\\Users\\nickb\\Programming\\Projects_C\\Jump Study C\\Projects\\StudentManagement\\StuMS\\StuMS\\StuMS\\StuMS.csproj",
+      "packagesPath": "C:\\Users\\nickb\\.nuget\\packages\\",
+      "outputPath": "C:\\Users\\nickb\\Programming\\Projects_C\\Jump Study C\\Projects\\StudentManagement\\StuMS\\StuMS\\StuMS\\obj\\",
       "projectStyle": "PackageReference",
       "fallbackFolders": [
         "C:\\Program Files (x86)\\Microsoft Visual Studio\\Shared\\NuGetPackages"
       ],
       "configFilePaths": [
-        "C:\\Users\\shemb\\AppData\\Roaming\\NuGet\\NuGet.Config",
+        "C:\\Users\\nickb\\AppData\\Roaming\\NuGet\\NuGet.Config",
         "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.FallbackLocation.config",
         "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.Offline.config"
       ],
