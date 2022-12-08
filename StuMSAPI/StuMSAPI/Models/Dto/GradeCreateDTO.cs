@@ -1,7 +1,7 @@
 ﻿using System.ComponentModel.DataAnnotations.Schema;
 using System.ComponentModel.DataAnnotations;
 
-namespace CapstoneAPI.Models.Dto
+namespace StuMSAPI.Models.Dto
 {
     public class GradeCreateDTO
     {

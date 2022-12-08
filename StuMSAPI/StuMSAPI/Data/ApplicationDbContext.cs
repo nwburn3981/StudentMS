@@ -1,7 +1,7 @@
-﻿using CapstoneAPI.Models;
+﻿using StuMSAPI.Models;
 using Microsoft.EntityFrameworkCore;
 
-namespace CapstoneAPI.Data
+namespace StuMSAPI.Data
 {
     public class ApplicationDbContext : DbContext
     {

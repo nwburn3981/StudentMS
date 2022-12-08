@@ -1,6 +1,6 @@
 ﻿using System.ComponentModel.DataAnnotations;
 
-namespace CapstoneAPI.Models.Dto
+namespace CStuMSAPI.Models.Dto
 {
     public class GradeDto
     {

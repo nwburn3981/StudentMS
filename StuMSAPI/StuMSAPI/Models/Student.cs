@@ -1,7 +1,7 @@
 ﻿using System.ComponentModel.DataAnnotations;
 using System.ComponentModel.DataAnnotations.Schema;
 
-namespace CapstoneAPI.Models
+namespace StuMSAPI.Models
 {
     public class Student
     {
