@@ -1,7 +1,8 @@
 using Microsoft.EntityFrameworkCore;
-using StuMS.Data;
-using StuMS.Repo;
-using StuMS.Repo.IRepo;
+
+
+using StuMS.Services;
+using StuMS.Services.IService;
 
 //Heres your Github practice Momo
 
@@ -10,11 +11,14 @@ var builder = WebApplication.CreateBuilder(args);
 // Add services to the container.
 builder.Services.AddControllersWithViews();
 
-builder.Services.AddDbContext<ApplicationDbContext>(options => options.UseSqlite(
-    builder.Configuration.GetConnectionString("DefaultConnection")));
+builder.Services.AddAutoMapper(typeof(StuMS.MappingConfig));
+
+builder.Services.AddHttpClient<IStudentService, StudentService>();
+
+builder.Services.AddScoped<IStudentService, StudentService>();
 
 //Register repos for Dependency Injection
-builder.Services.AddScoped<IUnitOfWork, UnitOfWork>();
+
 
 //TODO
 //builder.Services.AddSwaggerGen();

@@ -1,103 +1,32 @@
-﻿using Microsoft.AspNetCore.Http;
-using Microsoft.AspNetCore.Mvc;
-using StuMS.Repo.IRepo;
+﻿using AutoMapper;
 using StuMS.Models;
+using StuMS.Models.Dto;
+using Microsoft.AspNetCore.Mvc;
+using Newtonsoft.Json;
+using StuMS.Services.IService;
 
-namespace StuMS.Areas.Student.Controllers
+namespace StuMS.Controllers
 {
     public class StudentController : Controller
     {
-
-        private readonly IUnitOfWork _unit;
-
-        public StudentController(IUnitOfWork unit)
+        private readonly IStudentService _StudentService;
+        private readonly IMapper _mapper;
+        public StudentController(IStudentService StudentService, IMapper mapper)
         {
-            _unit = unit;
-        }
-        // GET: StudentController
-        public ActionResult Index()
-        {
-            //IEnumerable<Models.Student> studentList = _unit.Student.GetAll();
-            return View();
+            _StudentService = StudentService;
+            _mapper = mapper;
         }
 
-        // GET: StudentController/Details/5
-        public ActionResult Details(int id)
+        public async Task<IActionResult> Index()
         {
-            return View();
-        }
+            List<StudentDto> list = new();
 
-        // GET: StudentController/Create
-        public ActionResult Create()
-        {
-            return View();
-        }
-
-        // POST: StudentController/Create
-        [HttpPost]
-        [ValidateAntiForgeryToken]
-        public ActionResult Create(IFormCollection collection)
-        {
-            try
+            var response = await _StudentService.GetAllAsync<APIResponse>();
+            if (response != null && response.IsSuccess)
             {
-                return RedirectToAction(nameof(Index));
+                list = JsonConvert.DeserializeObject<List<StudentDto>>(Convert.ToString(response.Result));
             }
-            catch
-            {
-                return View();
-            }
+            return View(list);
         }
-
-        // GET: StudentController/Edit/5
-        public ActionResult Edit(int id)
-        {
-            return View();
-        }
-
-        // POST: StudentController/Edit/5
-        [HttpPost]
-        [ValidateAntiForgeryToken]
-        public ActionResult Edit(int id, IFormCollection collection)
-        {
-            try
-            {
-                return RedirectToAction(nameof(Index));
-            }
-            catch
-            {
-                return View();
-            }
-        }
-
-        // GET: StudentController/Delete/5
-        public ActionResult Delete(int id)
-        {
-            return View();
-        }
-
-        // POST: StudentController/Delete/5
-        [HttpPost]
-        [ValidateAntiForgeryToken]
-        public ActionResult Delete(int id, IFormCollection collection)
-        {
-            try
-            {
-                return RedirectToAction(nameof(Index));
-            }
-            catch
-            {
-                return View();
-            }
-        }
-
-        #region API CALLS
-        [HttpGet]
-        public IActionResult GetAll()
-        {
-            var studentList = _unit.Student.GetAll();
-            return Json(new { data = studentList });
-        }
-        #endregion
-
     }
 }

@@ -9,10 +9,10 @@ var builder = WebApplication.CreateBuilder(args);
 // Add services to the container.
 
 builder.Services.AddControllers();
-builder.Services.AddScoped<IStudentRepo, StudentRepo>();
-builder.Services.AddScoped<ITeacherRepo, TeacherRepo>();
-builder.Services.AddScoped<IGradeRepo, GradeRepo>();
-builder.Services.AddScoped<ICourseRepo, CourseRepo>();
+//builder.Services.AddScoped<IStudentRepo, StudentRepo>();
+//builder.Services.AddScoped<ITeacherRepo, TeacherRepo>();
+//builder.Services.AddScoped<IGradeRepo, GradeRepo>();
+//builder.Services.AddScoped<ICourseRepo, CourseRepo>();
 //builder.Services.AddAutoMapper(typeof(MappingConfig));
 
 // Learn more about configuring Swagger/OpenAPI at https://aka.ms/aspnetcore/swashbuckle

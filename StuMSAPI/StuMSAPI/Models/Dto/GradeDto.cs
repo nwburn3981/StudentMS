@@ -1,6 +1,6 @@
 ﻿using System.ComponentModel.DataAnnotations;
 
-namespace CStuMSAPI.Models.Dto
+namespace StuMSAPI.Models.Dto
 {
     public class GradeDto
     {

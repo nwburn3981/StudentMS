@@ -1,7 +1,13 @@
 {
   "ExpandedNodes": [
-    ""
+    "",
+    "\\StuMS",
+    "\\StuMSAPI\\StuMSAPI",
+    "\\StuMSAPI\\StuMSAPI\\Data",
+    "\\StuMSAPI\\StuMSAPI\\Models",
+    "\\StuMSAPI\\StuMSAPI\\Models\\Dto",
+    "\\StuMS\\StuMS"
   ],
-  "SelectedNode": "\\StudentManagement.sln",
+  "SelectedNode": "\\StuMS\\StuMS\\StuMS.sln",
   "PreviewInSolutionExplorer": false
 }

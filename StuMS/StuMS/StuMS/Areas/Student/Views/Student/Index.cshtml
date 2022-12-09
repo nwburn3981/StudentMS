@@ -1,46 +1,36 @@
-﻿@model IEnumerable<Student>
-@{
-    ViewData["Title"] = "Index";
-}
-
-@*@if(TempData["success"] != null)
-{
-    <h2>@TempData["success"]</h2>
-}*@
-@*<partial name="_Notification" />*@
-<div class="container p-3">
-    <div class="row pt-4">
-        <div class="col-6">
-            <h2 class="text-primary">Student List</h2>
+﻿@model IEnumerable<StuMS.Models.Dto.StudentDto>
+<br />
+<div class="container p-4 border">
+    <div class="row pb-2">
+        <div class="col">
+            <h1 class="text-primary">Student List</h1>
         </div>
-        <div class="col-6 text-end">
-            <a asp-controller="Student" asp-action="Create" class="btn btn-primary" hidden>
-                Create New Category
-            </a>
+        <div class="col text-end pt-1">
+            <a asp-controller="Student" asp-action="CreateStudent" class="btn btn-outline-primary"><i class="bi bi-plus-square-fill"></i> Create New Student</a>
         </div>
     </div>
+
+    <table class="table">
+        <thead>
+            <tr>
+                <th>
+                    Name
+                </th>
+                <th>
+                    Date of Birth
+                </th>
+            </tr>
+        </thead>
+        <tbody>
+            @foreach (var item in Model)
+            {
+                <tr>
+                    <td>@item.Name</td>
+                    <td>@item.dateOfBirth</td>
+
+                </tr>
+            }
+        </tbody>
+    </table>
+
 </div>
-
-<table id="stu-tbl" class="table table-bordered table-striped">
-
-    <thead>
-        <tr>
-            <th>
-                Student Name
-            </th>
-            <th>
-                Date of Birth
-            </th>
-            <th>
-                Email
-            <th />
-            <th />
-        </tr>
-    </thead>
-</table>
-
-@section Scripts{
-    <script src="~/js/student.js"></script>
-}
-
-
