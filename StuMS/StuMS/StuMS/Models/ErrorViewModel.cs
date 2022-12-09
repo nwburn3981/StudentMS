@@ -1,6 +1,6 @@
-namespace StuMS.Models
+﻿namespace StuMS.Models
 {
-    public class ErrorViewModel
+    public class ErrorViewMode
     {
         public string? RequestId { get; set; }
 

@@ -4,14 +4,14 @@
     "C:\\Users\\nickb\\Programming\\Projects_C\\Jump Study C\\Projects\\StudentManagement\\StuMS\\StuMS\\StuMS\\StuMS.csproj": {}
   },
   "projects": {
-    "C:\\Users\\nickb\\Programming\\Projects_C\\Jump Study C\\Projects\\StudentManagement\\StuMS\\StuMS\\StuMS\\StuMS.csproj": {
+    "C:\\Users\\nickb\\Programming\\Projects_C\\Jump Study C\\Projects\\StudentManagement\\StuMS\\StuMS\\ClassLibrary1\\Capstone_Utility.csproj": {
       "version": "1.0.0",
       "restore": {
-        "projectUniqueName": "C:\\Users\\nickb\\Programming\\Projects_C\\Jump Study C\\Projects\\StudentManagement\\StuMS\\StuMS\\StuMS\\StuMS.csproj",
-        "projectName": "StuMS",
-        "projectPath": "C:\\Users\\nickb\\Programming\\Projects_C\\Jump Study C\\Projects\\StudentManagement\\StuMS\\StuMS\\StuMS\\StuMS.csproj",
+        "projectUniqueName": "C:\\Users\\nickb\\Programming\\Projects_C\\Jump Study C\\Projects\\StudentManagement\\StuMS\\StuMS\\ClassLibrary1\\Capstone_Utility.csproj",
+        "projectName": "Capstone_Utility",
+        "projectPath": "C:\\Users\\nickb\\Programming\\Projects_C\\Jump Study C\\Projects\\StudentManagement\\StuMS\\StuMS\\ClassLibrary1\\Capstone_Utility.csproj",
         "packagesPath": "C:\\Users\\nickb\\.nuget\\packages\\",
-        "outputPath": "C:\\Users\\nickb\\Programming\\Projects_C\\Jump Study C\\Projects\\StudentManagement\\StuMS\\StuMS\\StuMS\\obj\\",
+        "outputPath": "C:\\Users\\nickb\\Programming\\Projects_C\\Jump Study C\\Projects\\StudentManagement\\StuMS\\StuMS\\ClassLibrary1\\obj\\",
         "projectStyle": "PackageReference",
         "fallbackFolders": [
           "C:\\Program Files (x86)\\Microsoft Visual Studio\\Shared\\NuGetPackages"
@@ -44,7 +44,79 @@
       "frameworks": {
         "net6.0": {
           "targetAlias": "net6.0",
+          "imports": [
+            "net461",
+            "net462",
+            "net47",
+            "net471",
+            "net472",
+            "net48",
+            "net481"
+          ],
+          "assetTargetFallback": true,
+          "warn": true,
+          "frameworkReferences": {
+            "Microsoft.NETCore.App": {
+              "privateAssets": "all"
+            }
+          },
+          "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\7.0.100\\RuntimeIdentifierGraph.json"
+        }
+      }
+    },
+    "C:\\Users\\nickb\\Programming\\Projects_C\\Jump Study C\\Projects\\StudentManagement\\StuMS\\StuMS\\StuMS\\StuMS.csproj": {
+      "version": "1.0.0",
+      "restore": {
+        "projectUniqueName": "C:\\Users\\nickb\\Programming\\Projects_C\\Jump Study C\\Projects\\StudentManagement\\StuMS\\StuMS\\StuMS\\StuMS.csproj",
+        "projectName": "StuMS",
+        "projectPath": "C:\\Users\\nickb\\Programming\\Projects_C\\Jump Study C\\Projects\\StudentManagement\\StuMS\\StuMS\\StuMS\\StuMS.csproj",
+        "packagesPath": "C:\\Users\\nickb\\.nuget\\packages\\",
+        "outputPath": "C:\\Users\\nickb\\Programming\\Projects_C\\Jump Study C\\Projects\\StudentManagement\\StuMS\\StuMS\\StuMS\\obj\\",
+        "projectStyle": "PackageReference",
+        "fallbackFolders": [
+          "C:\\Program Files (x86)\\Microsoft Visual Studio\\Shared\\NuGetPackages"
+        ],
+        "configFilePaths": [
+          "C:\\Users\\nickb\\AppData\\Roaming\\NuGet\\NuGet.Config",
+          "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.FallbackLocation.config",
+          "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.Offline.config"
+        ],
+        "originalTargetFrameworks": [
+          "net7.0"
+        ],
+        "sources": {
+          "C:\\Program Files (x86)\\Microsoft SDKs\\NuGetPackages\\": {},
+          "C:\\Program Files\\dotnet\\library-packs": {},
+          "https://api.nuget.org/v3/index.json": {}
+        },
+        "frameworks": {
+          "net7.0": {
+            "targetAlias": "net7.0",
+            "projectReferences": {
+              "C:\\Users\\nickb\\Programming\\Projects_C\\Jump Study C\\Projects\\StudentManagement\\StuMS\\StuMS\\ClassLibrary1\\Capstone_Utility.csproj": {
+                "projectPath": "C:\\Users\\nickb\\Programming\\Projects_C\\Jump Study C\\Projects\\StudentManagement\\StuMS\\StuMS\\ClassLibrary1\\Capstone_Utility.csproj"
+              }
+            }
+          }
+        },
+        "warningProperties": {
+          "warnAsError": [
+            "NU1605"
+          ]
+        }
+      },
+      "frameworks": {
+        "net7.0": {
+          "targetAlias": "net7.0",
           "dependencies": {
+            "AutoMapper": {
+              "target": "Package",
+              "version": "[12.0.0, )"
+            },
+            "AutoMapper.Extensions.Microsoft.DependencyInjection": {
+              "target": "Package",
+              "version": "[12.0.0, )"
+            },
             "Microsoft.EntityFrameworkCore": {
               "target": "Package",
               "version": "[7.0.0, )"
@@ -70,6 +142,14 @@
             "Microsoft.VisualStudio.Web.CodeGeneration.Design": {
               "target": "Package",
               "version": "[6.0.10, )"
+            },
+            "NPOI": {
+              "target": "Package",
+              "version": "[2.6.0, )"
+            },
+            "Newtonsoft.Json": {
+              "target": "Package",
+              "version": "[13.0.2, )"
             },
             "Swashbuckle.AspNetCore": {
               "target": "Package",
